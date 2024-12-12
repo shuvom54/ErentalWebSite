@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import arrow_icon from '../Assets/arrow.png'
-import home from '../Assets/home.jpg'
+import home1 from '../Assets/home1.jpeg'
 
 const Hero = () => {
   return (
@@ -13,19 +13,19 @@ const Hero = () => {
                 <p>New </p>
                 {/* <img src={hand_icon} alt="" /> */}
             </div>
-            <p>Collections</p>
-            <p>For Everyone</p>
+            <p>Rentals</p>
+            <span className='special-line'>For Everyone</span>
         </div>
         <div className="hero-latest-btn">
             <div onClick={'/newcollections'}>
-            Latest Collection
+            Latest Collection For Rent
                 
                 <img src={arrow_icon} alt="" />
             </div>
         </div>
       </div>
       <div className="hero-right">
-            <img src={home} alt="" />
+            {/* <img src={home1} alt="" /> */}
         </div>
     </div>
   )

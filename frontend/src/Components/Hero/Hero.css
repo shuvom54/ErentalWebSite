@@ -2,6 +2,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #e1eaff, #e1ffea22 60%);
     display: flex;
+    background-image: url(../Assets/home1.jpeg);
 }
 .hero-left{
     flex: 1;
@@ -45,7 +46,7 @@
     margin-left: -10px;
     background: #ff4141;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -62,6 +63,11 @@
     border: 8px lightblue double;
     height: 540px;
     width: 80%;
+}
+.special-line{
+    color: green;
+    font-size: 65px;
+    font-weight: 600;
 }
 /* @media (max-width:1280px) {
     .hero-left{

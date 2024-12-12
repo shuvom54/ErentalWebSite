@@ -9,17 +9,11 @@ const cors = require("cors");
 
 
 app.use(express.json());
-app.use(cors(
-    {
-        origin: ["https://deploy-mern-vinay.vercel.app"],
-        method: ["POST","GET"],
-        credentials: true
-    }
-));
+app.use(cors());
 
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/', )
+  .connect('mongodb://localhost:27017', )
   .then(() => console.log("Database connected!"))
   .catch(err => console.log(err));
 

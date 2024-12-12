@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './CartItems.css'
+import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
@@ -39,7 +40,7 @@ const CartItems = () => {
                 <div>
                     <div className="cartitems-total-item">
                         <p>Subtotal</p>
-                        <p><span>INR {getTotalCartAmount()}</span></p>
+                        <p><span> {getTotalCartAmount()}</span></p>
                     </div>
                     <hr />
                     <div className="cartitems-total-item">
@@ -52,7 +53,7 @@ const CartItems = () => {
                         <h3><span>INR {getTotalCartAmount()}</span></h3>
                     </div>
                 </div>
-                <button><a href="https://vinay.checkoutpage.co/e-commerce-3">PROCCED TO CHECKOUT</a></button>
+                <button><Link to='/checkout'>PROCCED TO CHECKOUT</Link></button>
             </div>
             <div className="cartitems-promocode">
                 <p>If you have a promo code, Enter it here</p>
